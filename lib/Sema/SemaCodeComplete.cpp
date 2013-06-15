@@ -2952,7 +2952,7 @@ CXCursorKind clang::getCursorKindForDecl(const Decl *D) {
       return CXCursor_ClassTemplatePartialSpecialization;
     case Decl::UsingDirective:     return CXCursor_UsingDirective;
     case Decl::TranslationUnit:    return CXCursor_TranslationUnit;
-      
+	case Decl::LinkageSpec:	 return CXCursor_LinkageSpec;
     case Decl::Using:
     case Decl::UnresolvedUsingValue:
     case Decl::UnresolvedUsingTypename: 
